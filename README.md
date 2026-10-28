@@ -1,7 +1,7 @@
 ## ĐỒ ÁN TỐT NGHIỆP - UEH Media Intelligence & Reputation Monitoring
 
 Hệ thống phân tích các tình huống trên không gian mạng dành cho UEH
-
+API_KEY: AQ.Ab8RN6Klr7QHs8aYljl6oPq31zN6LK2xX6QRVrIwV2bNsAxnOA
 ### 🔹 Dashboard
 - ⭐ Thể hiện thông tin các báo cáo (Tích cực, Trung Bình, Tiêu Cực)
 - ✨ Sử dụng LLM để xử lý thông tin
