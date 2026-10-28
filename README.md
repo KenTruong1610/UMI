@@ -46,4 +46,5 @@ Danh sách các bài báo được lưu vào MongoDB và có thể tải thông 
 
 ---
 
+## Lưu ý quan trọng: Nếu API Key bị lỗi, hệ thống chỉ phân tích dựa vào nội dung và phân tích NLP để phỏng đoán
 
