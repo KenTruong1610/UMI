@@ -23,8 +23,9 @@ Hệ thống phân tích các tình huống trên không gian mạng dành cho U
    ```
 3. Vào terminal và viết
    ```bash
-   npm start để khởi động
+   npm start 
    ```
+   để khởi động
 4. Vào localhost:3008 để vào hệ thống
 
 ---
