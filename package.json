@@ -1,0 +1,17 @@
+{
+  "name": "ueh-media-monitor",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.10.0",
+    "dotenv": "^17.2.3",
+    "@google/genai": "^2.4.0",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.5"
+  }
+}

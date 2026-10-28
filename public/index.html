@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hệ Thống Phân Tích Thông Tin Truyền Thông & Giám Sát Danh Tiếng UEH</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <div class="brand">
+          <div class="logo">
+            <span class="logo-ueh">UEH</span>
+            <span class="logo-year">1976</span>
+          </div>
+          <div class="brand-text">
+            <div class="brand-badges">
+              <span class="badge-university">Đại học Kinh tế TP. Hồ Chí Minh</span>
+              <span class="badge-ai">AI LLM Online</span>
+            </div>
+            <h1>Hệ Thống Phân Tích Thông Tin Truyền Thông & Giám Sát Danh Tiếng UEH</h1>
+            <p class="subtitle">Lưu trữ dữ liệu báo chí • Phân loại Tốt / Trung bình / Xấu • Phân tích qua Gemini 3.8 Flash</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button id="btnQuickCrawl" class="btn btn-amber">
+            <span class="spin-icon">⟳</span> Cào Tin Báo Mới
+          </button>
+          <div class="export-group">
+            <button id="btnExportJson" class="btn btn-ghost">↓ JSON</button>
+            <button id="btnExportCsv" class="btn btn-ghost">↓ CSV</button>
+          </div>
+        </div>
+      </div>
+      <div id="crisisBar" class="crisis-bar hidden">
+        <span>⚠️ <strong>Cảnh báo:</strong> Phát hiện <span id="crisisCount">0</span> bài viết tiêu cực cần phản hồi.</span>
+        <button id="btnViewCrisis" class="btn-link">Xem ngay →</button>
+      </div>
+      <nav class="nav-tabs">
+        <button class="nav-tab active" data-tab="dashboard">📊 1. Tổng Quan Danh Tiếng</button>
+        <button class="nav-tab" data-tab="articles">📰 2. Kho Dữ Liệu Bài Báo (<span id="navArticleCount">0</span>)</button>
+        <button class="nav-tab" data-tab="crawler">🔄 3. Cào Tin & Nhập / Xuất File</button>
+        <button class="nav-tab" data-tab="llm-station">✨ 4. Trạm Phân Tích LLM & Xử Lý Khủng Hoảng</button>
+        <button class="nav-tab" data-tab="architecture">💻 5. Kiến Trúc & Quy Trình LLM</button>
+      </nav>
+    </header>
+
+    <main id="mainContent" class="main-content">
+      <!-- Nội dung các tab sẽ được render bởi app.js -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="footer-brand">UEH MEDIA INTELLIGENCE</span>
+        <span>•</span>
+        <span>Đại học Kinh tế TP. Hồ Chí Minh (UEH)</span>
+        <span>•</span>
+        <span>Backend: Node/Express + MongoDB + Gemini 3.8 Flash</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal chi tiết bài báo -->
+  <div id="articleModal" class="modal-overlay hidden">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
